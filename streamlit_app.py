@@ -106,7 +106,7 @@ def publication_analysis():
     st.write("")
 
     #Getting the intial Image
-    col1, col2, col3 = st.beta_columns((1,2.5,1))
+    col1, col2, col3 = st.columns((1,2.5,1))
 
     #Showing initial analysis
     st.markdown("""
@@ -122,7 +122,7 @@ def publication_analysis():
                    </p>  """,unsafe_allow_html = True )
     st.write(" ")
 
-    col1, col2 = st.beta_columns((1,1))
+    col1, col2 = st.columns((1,1))
     dept_lst = [' Aerospace Engineering',' Biochemistry and Biophysics',
     ' Biological and Agricultural Engineering', ' Biomedical Engineering',
     ' Chemical Engineering', ' Computer Science and Engineering',
@@ -167,7 +167,7 @@ def publication_analysis():
             """)
     # To access the network analysis, press the button below -
     st.write("")
-    col1, col2, col3 = st.beta_columns((1,1,1))
+    col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to Department Network Analysis](https://pandey-tushar.github.io/TAMIDS-22/)'
     col2.markdown(link, unsafe_allow_html=True)
     # url = 'https://ritesh-suhag.github.io./'
@@ -198,7 +198,7 @@ def publication_analysis():
             """)
     # To access the network analysis, press the button below -
     st.write("")
-    col1, col2, col3 = st.beta_columns((1,1,1))
+    col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to University Network Analysis](https://pandey-tushar.github.io/Datathon-21/)'
     col2.markdown(link, unsafe_allow_html=True)
     # url = 'https://ritesh-suhag.github.io./'
@@ -245,7 +245,7 @@ def get_grant_analysis():
     st.write("")
 
     #Getting the initial image
-    col1, col2, col3 = st.beta_columns((1,2.5,1))
+    col1, col2, col3 = st.columns((1,2.5,1))
 
     #Showing intial analysis
     st.markdown("""
@@ -260,7 +260,7 @@ def get_grant_analysis():
                 </p>""",unsafe_allow_html=True)
     st.write(" ")
 
-    col1, col2 = st.beta_columns((1,1))
+    col1, col2 = st.columns((1,1))
     depts = ['All','Math', 'Physics',
     'Chemistry', 'Earth Science', 'Environmental', 'Biology',
     'Agricultural and Veterinary Sciences', 'Computer Science',
@@ -307,7 +307,7 @@ def get_grant_analysis():
     #To access the network analysis, press the button below.
 
     st.write("")
-    col1, col2, col3 = st.beta_columns((1,1,1))
+    col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to dept_wise grant analysis](https://pandey-tushar.github.io/intro_to_TDA/)'
     col2.markdown(link, unsafe_allow_html=True)
 
@@ -332,7 +332,7 @@ def authors():
 
 
     # Dividing screen into 2 parts -
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
     #image = Image.open('Images/tushar.png')
@@ -357,7 +357,7 @@ def authors():
     st.write("")
 
     # Dividing screen into 2 parts -
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
     #image = Image.open('Images/sambandh.png')
@@ -383,7 +383,7 @@ def authors():
     st.write("")
 
     # Dividing screen into 2 parts -
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
     #image = Image.open('Images/swarnabha.png')
@@ -407,7 +407,7 @@ def authors():
                """)
     st.write("")
     # Dividing screen into 2 parts -
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
     #image = Image.open('Images/swarnabha.png')
@@ -433,7 +433,7 @@ def authors():
     st.write("")
 
     # Dividing screen into 2 parts -
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
     #image = Image.open('Images/swarnabha.png')
