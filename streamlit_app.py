@@ -168,7 +168,7 @@ def publication_analysis():
     # To access the network analysis, press the button below -
     st.write("")
     col1, col2, col3 = st.beta_columns((1,1,1))
-    link = '[Go to Department Network Analysis](https://lucky301910.github.io./)'
+    link = '[Go to Department Network Analysis](TDA_TAMIDS/dept_collab_2.html)'
     col2.markdown(link, unsafe_allow_html=True)
     # url = 'https://ritesh-suhag.github.io./'
     # if col2.button("Go to the Network Analysis"):
