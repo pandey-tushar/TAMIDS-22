@@ -345,11 +345,9 @@ def impact_score():
     st.write("")
 
     st.markdown("""
-                <p style='text-align: justify;'>
-                $(".latex").latex();
-                <div class="latex"> 
-                Impact Score = $\frac{\hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0} {|| C(Dept)||_1}
-                </div></p>""",unsafe_allow_html = True)
+                <p style='text-align: justify;'>                
+                Impact Score = \frac{\hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0} {|| C(Dept)||_1}
+                </p>""",unsafe_allow_html = True)
     st.write("")
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
@@ -557,12 +555,19 @@ elif navigation_tab == 'Publication Analysis':
 
 
 # Second Page -
+elif navigation_tab == 'Collaboration plot':
+    collaboration_plot()
+
+# Third Page -
 elif navigation_tab == 'Grant Analysis':
     get_grant_analysis()
 
-# Third Page -
+# Fourth Page -
 elif navigation_tab == 'Impact score':
     impact_score()
+    
+
+
 
 # About Page -
 elif navigation_tab == 'About the Authors':
