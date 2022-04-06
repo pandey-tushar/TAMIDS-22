@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Bibliometric Analysis
 
-You can use the [editor on GitHub](https://github.com/pandey-tushar/TAMIDS-22/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Website: https://share.streamlit.io/pandey-tushar/tamids-22/main
 
-TEST!!!!!!!!!!!!!
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Dependencies needed to be installed:
+```sh
+pip install Pillow==8.0.1
+pip install streamlit==0.79.0
+pip install pyplot
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pandey-tushar/TAMIDS-22/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### To run the application on your local system: 
+1. Clone this project repository.
+2. Open Terminal 
+3. Navigate to the downloaded Github repo
+4. Execute the following commands on your terminal:
+```sh
+  streamlit run us_elections_app.py
+```
