@@ -46,7 +46,16 @@ def home_page():
                 <p style='text-align: justify;'>
              The analysis has been made on two groups of data: Grants and Publications. We created a dataset with
              different publication data including abstract, departments, research institutions and citation data.
-             ----------------Something about data collection------------
+             Before diving deep into the analysis, we tried to estimate the impact of research using four 
+             main-terms per abstract word that have been defined per department.                
+             ### Publication score:
+             ### Citation score
+             ### Normalized funding
+             ### Impact score
+
+
+Impact Score =  Normalized(Funding(Topic for dept)) x [no of publication (for topic in dept) x Total citation for topic]/Total citation for dept
+
              </p>
                 """, unsafe_allow_html=True)
     st.markdown("""
@@ -335,6 +344,11 @@ def impact_score():
                 </p>""",unsafe_allow_html = True)
     st.write("")
 
+    st.markdown("""
+                <p style='text-align: justify;'>
+                Impact Score = $\frac{\hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0} {|| C(Dept)||_1}
+                </p>""",unsafe_allow_html = True)
+    st.write("")
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
 
@@ -366,6 +380,13 @@ def impact_score():
                 It's a 3D scatter plot, which beautifully describes the 
                 effects of funding, citation and publication on impact
                 score, for different buzzwords within different departments.
+                </p>""",unsafe_allow_html=True)
+    st.write(" ")
+    
+    st.markdown("""
+                <p style = 'text-align: justify;'>
+                The graph is interactive, where we can rotate it to look at
+                the points in 3-Dimensions from different angles.
                 </p>""",unsafe_allow_html=True)
     st.write(" ")
     
