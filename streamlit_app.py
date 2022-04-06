@@ -83,6 +83,12 @@ def home_page():
     st.info("Please navigate using the select box in the sidebar on the left.")
 
 
+def get_topics():
+    #Getting the graph
+    HtmlFile = open(f"Publication_data/topics.html",'r',encoding = 'utf-8')
+    source_code_2 = HtmlFile.read()
+    components.html(source_code_2,height = 500)
+    
 def get_dept_collab_graph(dept_1, dept_2):
     #Getting the graph
     HtmlFile = open(f"Images/Dept_Collab/dept_collab_{dept_1}_{dept_2}.html",'r',encoding = 'utf-8')
@@ -107,19 +113,12 @@ def publication_analysis():
     #Getting the intial Image
     col1, col2, col3 = st.columns((1,2.5,1))
 
-    #Showing initial analysis
-    st.markdown("""
-                <p style='text-align: justify;'>
-                The plot shows this this....
-                </p>
-                """, unsafe_allow_html = True)
-    st.write(" ")
-    #Another graph
-    st.markdown("""
-                <p style='text-align: justify;'>
-                Description of the same graph
-                   </p>  """,unsafe_allow_html = True )
-    st.write(" ")
+    get_topics()
+    
+    st.markdown("""<p style='text-align: justify;'>
+                Abhijit's description
+                </p>""", unsafe_allow_html = True)
+    st.write("")
 
     col1, col2 = st.columns((1,1))
     dept_lst = [' Aerospace Engineering',' Biochemistry and Biophysics',
