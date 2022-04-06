@@ -173,6 +173,8 @@ def publication_analysis():
                 This graph represents the existing collaboration between departments
                 along with the insight related to the similarity between them based on 
                 the publication data obtained from altmetric website. 
+                x represents other departments with collaborations (some) and y represents
+                the number of publications they have together.
                 We can select a department and look at the common publications
                 they have with some other departments. The departments are sampled based 
                 on high publication counts and non zero collaboration.
