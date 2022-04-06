@@ -223,6 +223,62 @@ def publication_analysis():
     st.write(" ")
 
 
+    
+    
+#-------------------- Potential Collab -----------------    
+def get_dept_similar_graph(dept):
+    #Setting the Image
+    image = Image.open('Images/rohit img/{dept}.png')
+
+    #Setting the image width
+    st.image(image, use_column_width = True)
+    
+def collaboration_plot():
+    #Setting the title
+    st.title("Similar research areas for different departments")
+
+    #Description
+    st.markdown("""
+                <p style='text-align: justify;'>
+                 A similarity score is generated for every combination of the
+                 department and in this case, we use the cosine similarity. 
+                 Higher the cosine similarity score between two departments, 
+                 higher is their potential to work together on various subdisciplines.
+                </p>""",unsafe_allow_html = True)
+    st.write("")
+
+    #Getting the initial image
+    col1, col2, col3 = st.columns((1,2.5,1))
+
+
+
+    col1,col2 = st.columns((1,1))
+    dept_opt = [‘Amarillo Research_Lubbock Research,
+                ‘Beaumont Research_Ecology and Conservation biology’,
+                ‘Beaumont Research_Lubbock Research’,
+                ‘Beaumont Research_Stephenvile Research’,
+                ‘Biochemistry_Epigenetics’,
+                ‘Biochemistry_Medical Physiology’,
+                ‘Center for Microencapsule and Drug Delivery_Irma Lerma Rangel College of Pharmacy’,
+                ‘Chemical Engineering_Industrial Engineering’,
+                ‘Corpus Christi Entomology_Lubbock Entomology’,
+                ‘Ecology_Lubbock Research,
+                ‘Epigenetics_Pharmaceuticals’,
+                ‘Geography_Ocena Engineering’,
+                ‘Marketing_Multiresolution Modelling’,
+                ‘Veterinary Physiology_Medical Physiology’]
+    
+    #Geting dept from user
+    dept = col1.selectbox("Select department",depts)
+    
+    get_dept_similar_graph(dept)
+    
+    
+    
+    
+    
+    
+    
 #------------------ Grant Analysis -------------------------
 def get_grant_graph(dept, year):
     # Getting the Graph -
@@ -346,7 +402,7 @@ def impact_score():
 
     st.markdown("""
                 <p style='text-align: justify;'>                
-                Impact Score = \frac{\hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0} {|| C(Dept)||_1}
+                Impact Score = \hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0] / || C(Dept)||_1
                 </p>""",unsafe_allow_html = True)
     st.write("")
     #Getting the initial image
