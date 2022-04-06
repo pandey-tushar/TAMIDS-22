@@ -136,7 +136,7 @@ def publication_analysis():
     dept_1 = col1.selectbox("Select department 1",dept_lst)
 
     #Getting dept_2 from user
-    dept_2 = col2.selectbox("Select department 2",dept_lst.remove(dept_1))
+    dept_2 = col2.selectbox("Select department 2",dept_lst)
 
     #Getting the graph
     get_dept_collab_graph(dept_1,dept_2)
