@@ -203,16 +203,13 @@ def publication_analysis():
     col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to University Network Analysis](https://pandey-tushar.github.io/Datathon-21/)'
     col2.markdown(link, unsafe_allow_html=True)
-    # url = 'https://ritesh-suhag.github.io./'
-    # if col2.button("Go to the Network Analysis"):
-    #     webbrowser.open_new_tab(url)
 
     st.write(" ")
     #Setting the Image
-    #image = Image.open('Images/univ_collab.png')
+    image = Image.open('Images/univ_collab.png')
 
     #Setting the image width
-    #st.image(image, use_column_width = True)
+    st.image(image, use_column_width = True)
 
     st.write(" ")
 
