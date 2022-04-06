@@ -15,5 +15,5 @@ pip install pyplot
 3. Navigate to the downloaded Github repo
 4. Execute the following commands on your terminal:
 ```sh
-  streamlit run us_elections_app.py
+  streamlit run streamlit_app.py
 ```
