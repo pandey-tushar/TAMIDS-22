@@ -265,7 +265,7 @@ def collaboration_plot():
                 'Veterinary Physiology_Medical Physiology']
     
     #Geting dept from user
-    dept = col1.selectbox("Select department",depts)
+    dept = col1.selectbox("Select department",dept_opt)
     
     get_dept_similar_graph(dept)
     
