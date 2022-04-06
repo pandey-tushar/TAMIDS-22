@@ -143,7 +143,7 @@ def publication_analysis():
         get_dept_collab_graph(dept_1,dept_2)
     else:
         
-        st.write('**************************************************Select different departments in the two boxes *******************************************8')
+        st.write('**************************************************Select different departments in the two boxes ********************************************')
 
 
     st.markdown("""
