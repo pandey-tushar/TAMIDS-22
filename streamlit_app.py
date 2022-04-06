@@ -327,7 +327,7 @@ def get_grant_analysis():
 
 def get_impact_dept(dept):
     #Getting the graph
-    HtmlFile = open(f"Images/Impact/impact_{dept}.html",'r',encoding = 'utf-8')
+    HtmlFile = open(f"Images/Impact/{dept}.html",'r',encoding = 'utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2,height = 500)    
 
