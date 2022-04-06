@@ -89,9 +89,9 @@ def get_topics():
     source_code_2 = HtmlFile.read()
     components.html(source_code_2,height = 500)
     
-def get_dept_collab_graph(dept_1, dept_2):
+def get_dept_collab_graph(dept_1):
     #Getting the graph
-    HtmlFile = open(f"Images/Dept_Collab/dept_collab_{dept_1}_{dept_2}.html",'r',encoding = 'utf-8')
+    HtmlFile = open(f"Images/Dept_collab/dept_collab_{dept_1}.html",'r',encoding = 'utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2,height = 500)
 
@@ -132,19 +132,12 @@ def publication_analysis():
     'Mechanical Engineering', 'Molecular and Cellular Medicine',
     'Recreation', 'Teaching', 'Veterinary Physiology and Pharmacology']
     #Getting dept_1 from user
-    dept_1 = col1.selectbox("Select department 1",dept_lst)
-    
-    #Getting dept_2 from user
-    dept_2 = col2.selectbox("Select department 2",dept_lst)
+    dept_1 = col1.selectbox("Select department",dept_lst)
+  
 
     #Getting the graph
-    if dept_1!=dept_2:
-        get_dept_collab_graph(dept_1,dept_2)
-    else:
-        
-        st.write('**************************************************Select different departments in the two boxes ********************************************')
-
-
+    get_dept_collab_graph(dept_1)
+    
     st.markdown("""
                 <p style ='text-align: justify;'>
                 This graph represents the existing collaboration between departments
