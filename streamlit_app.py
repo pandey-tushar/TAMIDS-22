@@ -58,19 +58,25 @@ def home_page():
                  for topic]/Total citation for dept
                  </p>
                 """, unsafe_allow_html=True)
+    
+    get_formula()
+    
     st.markdown("""
                 <p style='text-align: justify;'>
-             -----More details on data obtained from web scraping----
+             The abstract keywords per department were calculated by using NLP algorithms on the dataset containing the 
+             abstracts of the publications using unigram, bigram and trigram to find the most frequently occurring sequential tokens. 
+             From the sequential tokens, the generic words were removed to formulate a clean corpus which was used to compute the four 
+             types of scores defined above.
              </p>
                 """, unsafe_allow_html=True)
     st.markdown("""
                 <p style='text-align: justify;'>
-             Data Cleaning explanation
-             Data Merge
+             In order to have a better understanding of these metrics, a graphical representation per department was plotted which 
+             has been included in our website and a few of these plots have been shown below.
              </p>
                 """, unsafe_allow_html=True)
 
-    get_formula()
+    
     # Overview -
     st.write("""
              ## Methodology
@@ -96,7 +102,7 @@ def get_formula():
     #Getting the graph
     HtmlFile = open(f"formula.html",'r',encoding = 'utf-8')
     source_code_2 = HtmlFile.read()
-    components.html(source_code_2,height = 500)
+    components.html(source_code_2,height = 200)
 
 
 def get_topics():
