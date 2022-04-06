@@ -265,9 +265,45 @@ def collaboration_plot():
                 'Veterinary Physiology_Medical Physiology']
     
     #Geting dept from user
-    dept = col1.selectbox("Select department",dept_opt)
-    
-    get_dept_similar_graph(dept)
+    dept = col1.selectbox("Select department",dept_opt)    
+    if dept == 'Amarillo Research_Lubbock Research':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Amarillo Research_Lubbock Research.png')
+    elif dept == 'Beaumont Research_Ecology and Conservation biology':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Beaumont Research_Ecology and Conservation biology.png')
+    elif dept == 'Beaumont Research_Lubbock Research':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Beaumont Research_Lubbock Research.png')
+    elif dept == 'Beaumont Research_Stephenvile Research':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Beaumont Research_Stephenvile Research.png')
+    elif dept == 'Biochemistry_Epigenetics':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Biochemistry_Epigenetics.png')
+    elif dept == 'Center for Microencapsule and Drug Delivery_Irma Lerma Rangel College of Pharmacy':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Center for Microencapsule and Drug Delivery_Irma Lerma Rangel College of Pharmacy.png')
+    elif dept == 'Chemical Engineering_Industrial Engineering':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Chemical Engineering_Industrial Engineering.png')
+    elif dept == 'Corpus Christi Entomology_Lubbock Entomology':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Corpus Christi Entomology_Lubbock Entomology.png')
+    elif dept == 'Ecology_Lubbock Research':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Ecology_Lubbock Research.png')
+    elif dept == 'Geography_Ocena Engineering':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Geography_Ocena Engineering.png')
+    elif dept == 'Marketing_Multiresolution Modelling':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Marketing_Multiresolution Modelling.png')
+    elif dept == 'Veterinary Physiology_Medical Physiology':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Veterinary Physiology_Medical Physiology.png')
+    #Setting the image width
+    st.image(image, use_column_width = True)
     
     st.markdown("""
                 <p style='text-align: justify;'>
