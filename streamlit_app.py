@@ -259,7 +259,7 @@ def get_grant_analysis():
                 </p>""",unsafe_allow_html=True)
     st.write(" ")
 
-    col1, col2 = st.columns((1,1))
+    col1 = st.columns(1)
     depts = ['Math', 'Physics',
     'Chemistry', 'Earth Science', 'Environmental', 'Biology',
     'Agricultural and Veterinary Sciences', 'Computer Science',
@@ -325,6 +325,60 @@ def get_grant_analysis():
 
 #------------------ Impact score -----------------------------
 
+def get_impact_dept(dept):
+    #Getting the graph
+    HtmlFile = open(f"Images/Impact/impact_{dept}.html",'r',encoding = 'utf-8')
+    source_code_2 = HtmlFile.read()
+    components.html(source_code_2,height = 500)    
+
+    
+def impact_score():
+    #Setting the title
+    st.title("Metric to calculate Impact of research")
+
+    #Description
+    st.markdown("""
+                <p style='text-align: justify;'>
+                The analysis related to funding/grant, publication and citations led 
+                us to create a powerful metric to determine the significance of specific
+                topics within a department that could enhance the chances of receiving 
+                grants and influencing the work in the academics as well as industry.
+                </p>""",unsafe_allow_html = True)
+    st.write("")
+
+    #Getting the initial image
+    col1, col2, col3 = st.columns((1,2.5,1))
+
+    #Showing intial analysis
+    st.markdown("""
+                <p style ='text-align: justify;'
+                The following plot describes the impact score for different departments.
+                Some interesting observations are, that neither of the factors alone is 
+                sufficient to determine the impact, thereby implying that our approach 
+                might be an efficient perspective to look from. 
+                </p>""",unsafe_allow_html = True)
+    st.write(" ")
+    
+    col1 = st.columns(1)
+    depts = ['Mathematics', 'Physics',
+    'Chemistry', 'Biology and Genetics',
+    'Agricultural and Crop Sciences', 
+    'Engineering', 'History and Archaeology',
+    'Geology and Geophysics']
+
+    #Geting dept from user
+    dept = col1.selectbox("Select department",depts)
+
+    get_impact_dept(dept)
+    
+    #Another graph
+    st.markdown("""
+                <p style = 'text-align: justify;'
+                It's a 3D scatter plot, which beautifully describes the 
+                effects of funding, citation and publication on impact
+                score, for different buzzwords within different departments.
+                </p>""",unsafe_allow_html=True)
+    st.write(" ")
 
 
 #------------------ About the Authors -------------------------
