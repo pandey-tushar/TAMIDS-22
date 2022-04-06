@@ -116,7 +116,15 @@ def publication_analysis():
     get_topics()
     
     st.markdown("""<p style='text-align: justify;'>
-                Abhijit's description
+                Initially we started exploration of the corpus with capping the word 
+                limit of sentences of abstract to 10000. The ideas was to find the 
+                frequency of words in abstracts with either high altimetric score 
+                or citation or public responses in different media channels. Then 
+                correlating those words for grant received for the 
+                research/publications. Hence we did the analysis and formed 
+                15 topics with associated keywords where these word occurances 
+                fetched great funds and associated with publications with high 
+                predefined metrics.
                 </p>""", unsafe_allow_html = True)
     st.write("")
 
@@ -143,9 +151,9 @@ def publication_analysis():
                 This graph represents the existing collaboration between departments
                 along with the insight related to the similarity between them based on 
                 the publication data obtained from altmetric website. 
-                We can select two different departments and look at the common publications
-                they have. The departments are sampled based on high publication counts and 
-                non zero collaboration.
+                We can select a department and look at the common publications
+                they have with some other departments. The departments are sampled based 
+                on high publication counts and non zero collaboration.
                 </p>
                 """,unsafe_allow_html = True)
     st.write("")
@@ -168,9 +176,6 @@ def publication_analysis():
     col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to Department Network Analysis](https://pandey-tushar.github.io/TAMIDS-22/)'
     col2.markdown(link, unsafe_allow_html=True)
-    # url = 'https://ritesh-suhag.github.io./'
-    # if col2.button("Go to the Network Analysis"):
-    #     webbrowser.open_new_tab(url)
 
     st.write(" ")
     #Setting the Image
