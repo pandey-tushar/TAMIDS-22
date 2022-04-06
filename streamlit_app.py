@@ -246,18 +246,7 @@ def get_grant_analysis():
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
 
-    #Showing intial analysis
-    st.markdown("""
-                <p style ='text-align: justify;'
-                This plot shows.........
-                </p>""",unsafe_allow_html = True)
-    st.write(" ")
-    #Another graph
-    st.markdown("""
-                <p style = 'text-align: justify;'
-                Description of the same graph
-                </p>""",unsafe_allow_html=True)
-    st.write(" ")
+
 
     col1,col2 = st.columns((1,1))
     depts = ['Math', 'Physics',
@@ -351,7 +340,7 @@ def impact_score():
 
     #Showing intial analysis
     st.markdown("""
-                <p style ='text-align: justify;'
+                <p style ='text-align: justify;'>
                 The following plot describes the impact score for different departments.
                 Some interesting observations are, that neither of the factors alone is 
                 sufficient to determine the impact, thereby implying that our approach 
@@ -373,13 +362,14 @@ def impact_score():
     
     #Another graph
     st.markdown("""
-                <p style = 'text-align: justify;'
+                <p style = 'text-align: justify;'>
                 It's a 3D scatter plot, which beautifully describes the 
                 effects of funding, citation and publication on impact
                 score, for different buzzwords within different departments.
                 </p>""",unsafe_allow_html=True)
     st.write(" ")
-
+    
+    
 
 #------------------ About the Authors -------------------------
 def authors():
