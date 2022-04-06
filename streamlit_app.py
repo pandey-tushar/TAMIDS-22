@@ -346,8 +346,10 @@ def impact_score():
 
     st.markdown("""
                 <p style='text-align: justify;'>
+                $(".latex").latex();
+                <div class="latex"> 
                 Impact Score = $\frac{\hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0} {|| C(Dept)||_1}
-                </p>""",unsafe_allow_html = True)
+                </div></p>""",unsafe_allow_html = True)
     st.write("")
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
