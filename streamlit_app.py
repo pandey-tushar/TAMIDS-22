@@ -261,7 +261,7 @@ def get_grant_analysis():
     st.write(" ")
 
     col1, col2 = st.columns((1,1))
-    depts = ['All','Math', 'Physics',
+    depts = ['Math', 'Physics',
     'Chemistry', 'Earth Science', 'Environmental', 'Biology',
     'Agricultural and Veterinary Sciences', 'Computer Science',
     'Engineering', 'Technology', 'Medical and Health Sciences',
