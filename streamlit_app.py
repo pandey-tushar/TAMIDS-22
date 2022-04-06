@@ -84,7 +84,6 @@ def home_page():
 
 
 def get_dept_collab_graph(dept_1, dept_2):
-    return
     #Getting the graph
     HtmlFile = open(f"Images/Dept_Collab/dept_collab_{dept_1}_{dept_2}.html",'r',encoding = 'utf-8')
     source_code_2 = HtmlFile.read()
