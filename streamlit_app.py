@@ -44,19 +44,19 @@ def home_page():
              """)
     st.markdown("""
                 <p style='text-align: justify;'>
-             The analysis has been made on two groups of data: Grants and Publications. We created a dataset with
-             different publication data including abstract, departments, research institutions and citation data.
-             Before diving deep into the analysis, we tried to estimate the impact of research using four 
-             main-terms per abstract word that have been defined per department.                
-             ### Publication score:
-             ### Citation score
-             ### Normalized funding
-             ### Impact score
-
-
-Impact Score =  Normalized(Funding(Topic for dept)) x [no of publication (for topic in dept) x Total citation for topic]/Total citation for dept
-
-             </p>
+                 The analysis has been made on two groups of data: Grants and Publications. We created a dataset with
+                 different publication data including abstract, departments, research institutions and citation data.
+                 Before diving deep into the analysis, we tried to estimate the impact of research using four 
+                 main-terms per abstract word that have been defined per department.                
+                 <ul>
+                 <li> Publication score:
+                 <li> Citation score
+                 <li> Normalized funding
+                 <li> Impact score </ul>
+                 Impact Score =  Normalized(Funding(Topic for dept)) x 
+                 [no of publication (for topic in dept) x Total citation 
+                 for topic]/Total citation for dept
+                 </p>
                 """, unsafe_allow_html=True)
     st.markdown("""
                 <p style='text-align: justify;'>
