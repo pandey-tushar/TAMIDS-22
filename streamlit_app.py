@@ -181,7 +181,7 @@ def publication_analysis():
     image = Image.open('Images/dept_collab.jpg')
 
     #Setting the image width
-    #st.image(image, use_column_width = True)
+    st.image(image, use_column_width = True)
 
     st.write(" ")
 
