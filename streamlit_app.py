@@ -207,10 +207,10 @@ def publication_analysis():
 
     st.write(" ")
     #Setting the Image
-    image = Image.open('Images/univ_collab.png')
+    #image = Image.open('Images/univ_collab.png')
 
     #Setting the image width
-    st.image(image, use_column_width = True)
+    #st.image(image, use_column_width = True)
 
     st.write(" ")
 
