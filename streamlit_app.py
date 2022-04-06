@@ -147,9 +147,12 @@ def publication_analysis():
 
     st.markdown("""
                 <p style ='text-align: justify;'>
-                This graph describes the collaboration which already exists between
-                different departments. Top few departments are chose for the sake
-                of complexity and large dataset for demonstration.
+                This graph represents the existing collaboration between departments
+                along with the insight related to the similarity between them based on 
+                the publication data obtained from altmetric website. 
+                We can select two different departments and look at the common publications
+                they have. The departments are sampled based on high publication counts and 
+                non zero collaboration.
                 </p>
                 """,unsafe_allow_html = True)
     st.write("")
