@@ -134,12 +134,15 @@ def publication_analysis():
     'Recreation', 'Teaching', 'Veterinary Physiology and Pharmacology']
     #Getting dept_1 from user
     dept_1 = col1.selectbox("Select department 1",dept_lst)
-    dep_lst_2 = dep_lst.copy()
+    
     #Getting dept_2 from user
-    dept_2 = col2.selectbox("Select department 2",dept_lst_2.remove(dept_1))
+    dept_2 = col2.selectbox("Select department 2",dept_lst)
 
     #Getting the graph
-    get_dept_collab_graph(dept_1,dept_2)
+    if dept_1!=dept_2:
+        get_dept_collab_graph(dept_1,dept_2)
+    else:
+        st.write('Select different departments in the two boxes')
 
 
     st.markdown("""
