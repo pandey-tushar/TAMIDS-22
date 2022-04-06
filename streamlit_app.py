@@ -309,6 +309,12 @@ def collaboration_plot():
     elif dept == 'Veterinary Physiology_Medical Physiology':
         #Setting the Image
         image = Image.open('Images/rohit img/Veterinary Physiology_Medical Physiology.png')
+    elif dept == 'Epigenetics_Pharmaceuticals':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Epigenetics_Pharmaceuticals.png')
+    elif dept == 'Biochemistry_Medical Physiology':
+        #Setting the Image
+        image = Image.open('Images/rohit img/Biochemistry_Medical Physiology.png')
     #Setting the image width
     st.image(image, use_column_width = True)
     
