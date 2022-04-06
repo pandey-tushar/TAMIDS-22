@@ -86,7 +86,7 @@ def home_page():
 def get_dept_collab_graph(dept_1, dept_2):
     return
     #Getting the graph
-    HtmlFile = open(f"Images/Dept_Collab/dept_collab_{dept_1}_{dept_2}",'r',encoding = 'utf-8')
+    HtmlFile = open(f"Images/Dept_Collab/dept_collab_{dept_1}_{dept_2}.html",'r',encoding = 'utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2,height = 500)
 
@@ -226,7 +226,7 @@ def get_grant_graph(dept, year):
         year = '2000'
     elif year == 'Before 1999':
         year = '0'
-    HtmlFile = open(f"Images/Grant_collab/grant_dept_{dept}_{year}", 'r', encoding='utf-8')
+    HtmlFile = open(f"Images/Grant_collab/grant_dept_{dept}_{year}.html", 'r', encoding='utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=500)
 
