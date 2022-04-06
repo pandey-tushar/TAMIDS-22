@@ -70,6 +70,7 @@ def home_page():
              </p>
                 """, unsafe_allow_html=True)
 
+    get_formula()
     # Overview -
     st.write("""
              ## Methodology
@@ -90,6 +91,12 @@ def home_page():
     # Navigation -
     st.write("")
     st.info("Please navigate using the select box in the sidebar on the left.")
+    
+def get_formula():
+    #Getting the graph
+    HtmlFile = open(f"formula.html",'r',encoding = 'utf-8')
+    source_code_2 = HtmlFile.read()
+    components.html(source_code_2,height = 500)
 
 
 def get_topics():
