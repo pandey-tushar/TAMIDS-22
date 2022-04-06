@@ -508,6 +508,23 @@ def impact_score():
     st.write(" ")
     
     
+    st.markdown("""
+                <p style = 'text-align: justify;'>
+                The motivation for impact score was paved through the following pipeline
+                
+                Publication data Collection and cleaning ->
+                Natural Language Processing on data related to publications ->
+                Data analysis using similarity metrics and network analysis using TDA ->
+                Grant data collection and preprocessing -> 
+                Natural Language Processing on Grant data ->
+                Network Analysis using TDA and grant trends ->
+                Merge the two dataset using common keywords ->
+                Frequent words used in grants associates to higher citations and higher publications ->
+                "Canonical choice of metric - Impact Score based on normalized values"
+                </p>""",unsafe_allow_html=True)
+    st.write(" ")
+    
+    
 
 #------------------ About the Authors -------------------------
 def authors():
