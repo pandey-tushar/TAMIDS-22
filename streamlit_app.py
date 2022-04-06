@@ -259,7 +259,7 @@ def get_grant_analysis():
                 </p>""",unsafe_allow_html=True)
     st.write(" ")
 
-    col1 = st.columns(1)
+    col1,col2 = st.columns((1,1))
     depts = ['Math', 'Physics',
     'Chemistry', 'Earth Science', 'Environmental', 'Biology',
     'Agricultural and Veterinary Sciences', 'Computer Science',
@@ -359,7 +359,7 @@ def impact_score():
                 </p>""",unsafe_allow_html = True)
     st.write(" ")
     
-    col1 = st.columns(1)
+    col1 = st.columns((1))
     depts = ['Mathematics', 'Physics',
     'Chemistry', 'Biology and Genetics',
     'Agricultural and Crop Sciences', 
