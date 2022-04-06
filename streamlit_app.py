@@ -307,8 +307,13 @@ def collaboration_plot():
     
     st.markdown("""
                 <p style='text-align: justify;'>
-                 A possibility to look at potential departmental collaborations
-                 based on similar topic.
+                 A total of 83028 (408C2) comparisons were made and we could see that various 
+                 departments were exclusively working on similar subdisciplines. We could thus 
+                 make recommendations to these departments to collaborate if they don’t already. 
+                 The following plots show the departments that have high potential of 
+                 collaboration, the plots also show the subdisciplines in which the departments 
+                 should be collaborating. We visually analyze the graphs to analyze which is a 
+                 better approach for the subdiscipline representation.
                 </p>""",unsafe_allow_html = True)
     st.write("")
     
