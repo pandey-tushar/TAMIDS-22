@@ -470,7 +470,7 @@ def impact_score():
     col1,col2 = st.columns((1,1))
     depts = ['Mathematics', 'Physics',
     'Chemistry', 'Biology and Genetics',
-    'Agricultural and Crop Sciences', 
+    'Agriculture and Crop Sciences', 
     'Engineering', 'History and Archaeology',
     'Geology and Geophysics']
 
