@@ -250,30 +250,31 @@ def collaboration_plot():
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
 
-
-
     col1,col2 = st.columns((1,1))
-    dept_opt = [‘Amarillo Research_Lubbock Research,
-                ‘Beaumont Research_Ecology and Conservation biology’,
-                ‘Beaumont Research_Lubbock Research’,
-                ‘Beaumont Research_Stephenvile Research’,
-                ‘Biochemistry_Epigenetics’,
-                ‘Biochemistry_Medical Physiology’,
-                ‘Center for Microencapsule and Drug Delivery_Irma Lerma Rangel College of Pharmacy’,
-                ‘Chemical Engineering_Industrial Engineering’,
-                ‘Corpus Christi Entomology_Lubbock Entomology’,
-                ‘Ecology_Lubbock Research,
-                ‘Epigenetics_Pharmaceuticals’,
-                ‘Geography_Ocena Engineering’,
-                ‘Marketing_Multiresolution Modelling’,
-                ‘Veterinary Physiology_Medical Physiology’]
+    dept_opt = ['Amarillo Research_Lubbock Research','Beaumont Research_Ecology and Conservation biology',
+                'Beaumont Research_Lubbock Research', 'Beaumont Research_Stephenvile Research',
+                'Biochemistry_Epigenetics',
+                'Biochemistry_Medical Physiology',
+                'Center for Microencapsule and Drug Delivery_Irma Lerma Rangel College of Pharmacy',
+                'Chemical Engineering_Industrial Engineering',
+                'Corpus Christi Entomology_Lubbock Entomology',
+                'Ecology_Lubbock Research',
+                'Epigenetics_Pharmaceuticals',
+                'Geography_Ocena Engineering',
+                'Marketing_Multiresolution Modelling',
+                'Veterinary Physiology_Medical Physiology']
     
     #Geting dept from user
     dept = col1.selectbox("Select department",depts)
     
     get_dept_similar_graph(dept)
     
-    
+    st.markdown("""
+                <p style='text-align: justify;'>
+                 A possibility to look at potential departmental collaborations
+                 based on similar topic.
+                </p>""",unsafe_allow_html = True)
+    st.write("")
     
     
     
@@ -596,7 +597,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 # Sidebar navigation for users -
 st.sidebar.header('Navigation tab -')
 navigation_tab = st.sidebar.selectbox('Choose a tab', ('Home-Page',
- 'Publication Analysis', 'Grant Analysis',
+ 'Publication Analysis','Collaboration potential', 'Grant Analysis',
  'Impact score', 'About the Authors'))
 
 # Displaying pages according to the selection -
@@ -611,7 +612,7 @@ elif navigation_tab == 'Publication Analysis':
 
 
 # Second Page -
-elif navigation_tab == 'Collaboration plot':
+elif navigation_tab == 'Collaboration potential':
     collaboration_plot()
 
 # Third Page -
