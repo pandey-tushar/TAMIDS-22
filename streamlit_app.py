@@ -278,13 +278,17 @@ def get_grant_analysis():
     '2010 - 2019', '2000 - 2009', 'Before 1999'])
 
     get_grant_graph(dept, year)
-
+    
+    
     st.markdown("""
-                <p  style = 'text-align: justify;'
+                <p  style = 'text-align: justify;'>
                 This graph describes the funding received by different
                 departments over the years. The plot contains information
                 about the amount of funding received per year, the total
                 amount of funding received for every department.
+                There are various trends which can be observed here, the trivial
+                one being a constant increase in the funding throughout the 
+                years for most of the departments.
                 </p> """,unsafe_allow_html = True)
     st.write(" ")
 
@@ -299,7 +303,7 @@ def get_grant_analysis():
     st.write(" ")
 
     st.write("""
-            You can go to the grant network analysis page by clicking
+            We can go to the grant network analysis page by clicking
             on the link. Below is a snapshot of the department-wise Grant
             network analysis""")
 
@@ -312,10 +316,10 @@ def get_grant_analysis():
 
     st.write(" ")
     #Setting the Image
-    #image = Image.open('Images/dept_collab.png')
+    image = Image.open('Images/grant_dept_collab.jpg')
 
     #Setting the image width
-    #st.image(image, use_column_width = True)
+    st.image(image, use_column_width = True)
 
     st.write(" ")
 
