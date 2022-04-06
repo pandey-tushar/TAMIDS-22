@@ -161,14 +161,13 @@ def publication_analysis():
     #Dept_collab interactive analysis
     st.markdown("""
                 <p style='text-align: justify;'>
-                The following interactive graph is about the collaboration
-                between different departments and with different publication
-                years
+                The following interactive graph is about the departments with different publications
+                for different years, with a possibility at looking at multiple departments.
                 </p>
                 """, unsafe_allow_html = True)
     st.write(" ")
     st.write("""
-            You can go to the department collaboration page by clicking on the
+            We can go to the department collaboration page by clicking on the
             link. Below is a snapshot of the dept collaboration network analysis.
             """)
     # To access the network analysis, press the button below -
@@ -179,7 +178,7 @@ def publication_analysis():
 
     st.write(" ")
     #Setting the Image
-    #image = Image.open('Images/dept_collab.png')
+    image = Image.open('Images/dept_collab.jpg')
 
     #Setting the image width
     #st.image(image, use_column_width = True)
