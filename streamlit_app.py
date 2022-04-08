@@ -13,7 +13,7 @@ import webbrowser
 
 def home_page():
     # Setting the title -
-    st.title("TAMIDS Data Science Competition 2022")
+    #st.title("TAMIDS Data Science Competition 2022")
 
     # Desription -
     st.markdown("""
@@ -673,7 +673,7 @@ st.set_page_config(layout='wide', page_title = 'Bibliometric Research')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Setting the image - 
-image = Image.open('Images/image.png')
+image = Image.open('Images/image2.png')
 
 # Setting the image width -
 st.image(image, use_column_width=True)
