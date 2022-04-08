@@ -458,12 +458,13 @@ def impact_score():
                 grants and influencing the work in the academics as well as industry.
                 </p>""",unsafe_allow_html = True)
     st.write("")
-
-    st.markdown("""
-                <p style='text-align: justify;'>                
-                Impact Score = \hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0] / || C(Dept)||_1
-                </p>""",unsafe_allow_html = True)
-    st.write("")
+    
+    get_formula()
+    #st.markdown("""
+    #            <p style='text-align: justify;'>                
+    #            Impact Score = \hat{F}[(Topics) * || C(Topic) ||_1 * ||P(Topic)||_0] / || C(Dept)||_1
+    #            </p>""",unsafe_allow_html = True)
+    #st.write("")
     #Getting the initial image
     col1, col2, col3 = st.columns((1,2.5,1))
 
