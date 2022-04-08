@@ -535,7 +535,7 @@ def authors():
     col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
-    #image = Image.open('Images/tushar.png')
+    image = Image.open('Images/tushar.png')
 
     # Setting the image width -
     col1.write("")
@@ -560,7 +560,7 @@ def authors():
     col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
-    #image = Image.open('Images/sambandh.png')
+    image = Image.open('Images/sambandh.png')
 
     # Setting the image width -
     col1.write("")
@@ -586,7 +586,7 @@ def authors():
     col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
-    #image = Image.open('Images/swarnabha.png')
+    image = Image.open('Images/Abhijeet.png')
 
     # Setting the image width -
     col1.write("")
@@ -610,7 +610,7 @@ def authors():
     col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
-    #image = Image.open('Images/swarnabha.png')
+    image = Image.open('Images/swarnabha.png')
 
     # Setting the image width -
     col1.write("")
@@ -636,7 +636,7 @@ def authors():
     col1, col2, col3 = st.columns((0.75,0.1,2))
 
     # Setting the image -
-    #image = Image.open('Images/swarnabha.png')
+    image = Image.open('Images/dd.png')
 
     # Setting the image width -
     col1.write("")
