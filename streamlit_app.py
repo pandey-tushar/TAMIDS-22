@@ -539,7 +539,7 @@ def authors():
 
     # Setting the image width -
     col1.write("")
-    #col1.image(image, use_column_width=True)
+    col1.image(image, use_column_width=True)
 
     # Ritesh Singh Suhag -
     col3.write("## Tushar Pandey")
@@ -565,7 +565,7 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    #col1.image(image, use_column_width=True)
+    col1.image(image, use_column_width=True)
 
     # Ritesh Singh Suhag -
     col3.write("## Sambandh Dhal")
@@ -591,7 +591,7 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    #col1.image(image, use_column_width=True)
+    col1.image(image, use_column_width=True)
 
     # Abhijit Mahapatra -
     col3.write("## Abhijit Mahapatra")
@@ -615,7 +615,7 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    #col1.image(image, use_column_width=True)
+    col1.image(image, use_column_width=True)
 
     # Swarnabha -
     col3.write("## Swarnabha Roy")
@@ -641,7 +641,7 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    #col1.image(image, use_column_width=True)
+    col1.image(image, use_column_width=True)
 
     # Ritesh Singh Suhag -
     col3.write("## Rohit Dube")
