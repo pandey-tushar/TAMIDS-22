@@ -669,6 +669,12 @@ def authors():
 st.set_page_config(layout='wide', page_title = 'Bibliometric Research')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
+# Setting the image - 
+image = Image.open('Images/image.png')
+
+# Setting the image width -
+st.image(image, use_column_width=True)
+
 # Sidebar navigation for users -
 st.sidebar.header('Navigation tab -')
 navigation_tab = st.sidebar.selectbox('Choose a tab', ('Home-Page',
