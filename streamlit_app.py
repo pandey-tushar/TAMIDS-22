@@ -679,7 +679,7 @@ image = Image.open('Images/image2.png')
 st.image(image, use_column_width=True)
 
 # Sidebar navigation for users -
-st.sidebar.header('Navigation tab -')
+st.sidebar.header('Navigation tab')
 navigation_tab = st.sidebar.selectbox('Choose a tab', ('Home-Page',
  'Publication Analysis','Collaboration potential', 'Grant Analysis',
  'Impact score', 'About the Authors'))
