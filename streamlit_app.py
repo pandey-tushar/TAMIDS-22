@@ -85,8 +85,7 @@ def home_page():
                 <p style='text-align: justify;'>
 
                 * **Feature Engineering:** Data normalization explained
-                * **Unsupervised Learning:** Clustering based on different
-                features of the data.
+                * **Unsupervised Learning:** Clustering based on different features of the data.
                 Rather, with the mapper package, we see a better picture of our
                 clusters which brings us to the visualizations.
                 * **Dynamic Visualization:** About TDA and other visualization.
