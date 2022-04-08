@@ -605,6 +605,7 @@ def authors():
                * **Degree:** Masters Student (Computer Engineering)
                * **Email:** mahapatraabhijit.9@tamu.edu
                * **LinkedIn:** [linkedin.com/in/abhijit-mahapatra807/](https://www.linkedin.com/in/abhijit-mahapatra807/)
+               * **Github:** [github.com/livingMabhijit](https://github.com/livingMabhijit)
                """)
     st.write("")
     # Dividing screen into 2 parts -
@@ -655,6 +656,7 @@ def authors():
                * **Degree:** PhD Student (Industrial Engineering)
                * **Email:** dube.rohit@tamu.edu
                * **LinkedIn:** [linkedin.com/in/rohitdube922/](https://www.linkedin.com/in/rohitdube922/)
+               * **Github:** [github.com/Rohitd922](https://github.com/Rohitd922)
                """)
     st.write("")
 
