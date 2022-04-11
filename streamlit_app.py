@@ -669,7 +669,7 @@ def authors():
 
 #--------------------------- Main Application page----------------
 
-st.set_page_config(layout='wide', page_title = 'Bibliometric Research')
+st.set_page_config(layout='wide', page_title = 'Bibliometric Research', page_icon="chart_with_upwards_trend")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Setting the image - 
